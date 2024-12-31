@@ -1,0 +1,166 @@
+/* Lexend Deca */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+  font-family: "Lexend Deca", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  min-height: 100vh;
+  background: url("/static/background.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#root {
+  width: 100%;
+}
+
+.currency_converter {
+  margin: 0 auto;
+  padding: 40px 30px 50px;
+  border-radius: 8px;
+  max-width: 410px;
+  backdrop-filter: blur(30px);
+  background: rgba(2, 7, 40, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.logo_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.currency_converter .polaris_logo {
+  width: 120px;
+  height: auto;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+.currency_converter .converter_title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.currency_converter .converter_form {
+  margin-top: 30px;
+}
+
+.currency_converter .form_group {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.currency_converter .form_group .form_label {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.currency_converter .form_group .form_input {
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 0 15px;
+  color: #ffffff;
+  min-height: 48px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.currency_converter .form_currency_group {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form_currency_group .currency_select {
+  display: flex;
+  padding: 0 10px;
+  min-height: 45px;
+  align-items: center;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.form_currency_group .currency_select img {
+  width: 25px;
+}
+
+.form_currency_group .currency_select .currency_dropdown {
+  outline: none;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0 10px 0 5px;
+}
+
+.form_currency_group .currency_select .currency_dropdown option {
+  color: #000000;
+  column-rule: 500;
+}
+
+.form_currency_group .swap_icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.form_currency_group .swap_icon:hover {
+  transform: rotate(180deg);
+}
+
+.converter_form .submit_button {
+  width: 100%;
+  min-height: 52px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: 0.2s ease;
+  background: #dff7f9;
+}
+
+.converter_form .submit_button:hover{
+  background: rgba(255, 255, 255, 0.3);
+  color:#ffffff;
+}
+
+.converter_form .exchange_rate_result {
+  color:#ffffff;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 30px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  background: rgba(255, 255, 255, 0.1);
+}
